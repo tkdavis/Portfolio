@@ -37,6 +37,20 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script defer type="text/javascript">
+      const init = () => {
+        var imgDefer = Array.prototype.slice.call(document.getElementsByTagName('img'), 0);
+        var iframeDefer = Array.prototype.slice.call(document.getElementsByTagName('iframe'), 0);
+        var itemDefer = imgDefer.concat(iframeDefer);
+        for (var i=0; i<itemDefer.length; i++) {
+          if(itemDefer[i].getAttribute('data-src') && isElementInViewport(itemDefer[i])) {
+            itemDefer[i].setAttribute('src',itemDefer[i].getAttribute('data-src'));
+            itemDefer[i].removeAttribute('data-src');
+          }
+        }
+
+        window.onload = init;
+      }
+      
       const addEventListener = () => {
         if (window.addEventListener) {
             window.addEventListener('DOMContentLoaded', init, false); 
@@ -61,20 +75,6 @@
             rect.bottom <= (window.innerHeight+500 || document.documentElement.clientHeight) && /*or $(window).height() */
             rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
         );
-      }
-
-      const init = () => {
-        var imgDefer = Array.prototype.slice.call(document.getElementsByTagName('img'), 0);
-        var iframeDefer = Array.prototype.slice.call(document.getElementsByTagName('iframe'), 0);
-        var itemDefer = imgDefer.concat(iframeDefer);
-        for (var i=0; i<itemDefer.length; i++) {
-          if(itemDefer[i].getAttribute('data-src') && isElementInViewport(itemDefer[i])) {
-            itemDefer[i].setAttribute('src',itemDefer[i].getAttribute('data-src'));
-            itemDefer[i].removeAttribute('data-src');
-          }
-        }
-
-        window.onload = init;
       }
     </script>
   </body>

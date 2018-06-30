@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Work+Sans');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif !important;
+}
+
+.jumbotron {
+  background-color: #fff !important;
+  -webkit-animation: fade-in-top 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-top 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+img {
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+img[data-src] {
+  opacity: 0;
+}
+
+@-webkit-keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-top {
+  0% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.album.bg-light {
+  background-color: #f1f4fa !important;
+}
+
+h1.serif-header {
+  font-family: 'Montserrat', serif;
+  font-size: 4em;
+  color: #000;
+  opacity: 0.87;
+  font-weight: 400;
+}
+
+h1.jumbotron-heading {
+  font-size: 8vw;
+}
+
+footer {
+  min-height: 40vh;
+  padding: 15vh 0px;
+  background-color: #5047ff;
+}
+
+footer p {
+  margin-bottom: 0.1rem;
+  color: #fff;
+}
+
+.card {
+  -webkit-animation: fade-in-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-bottom 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.nav-component a {
+  color: #000000bf;
+}
+
+a.selected-nav {
+  color: #5047ff;
+  border-bottom: 1px solid #5047ff;
+  border-bottom-style: dashed;
+}
+
+.nav-component {
+  height: 90px;
+  padding: 28px 14px;
+  margin: 8px;
+  -webkit-animation: fade-in-top 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation: fade-in-top 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.iframe-scroll-wrapper {
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+}
+
+/* Particle Effect */
+.watch-face {
+  height: 12vw;
+  width: 12vw;
+  animation: pulse 10s cubic-bezier(0.5, 0, 0.5, 1) normal infinite;
+  margin-left: 41vw;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  opacity: 0.5;
+}
+
+.circle {
+  height: 12vw;
+  width: 12vw;
+  border-radius: 50%;
+  position: absolute;
+  mix-blend-mode: screen;
+  transform: translate(0, 0);
+  animation: center 6s infinite;
+}
+
+/*.circle:nth-child(odd) {
+  background: #2007ff47
+}
+
+.circle:nth-child(even) {
+  background: #2007ff47
+}*/
+
+.circle:nth-child(1) {
+  background: #2f00ff;
+  animation: circle-1 10s ease normal infinite;
+}
+
+.circle:nth-child(2) {
+  background: #00fff3;
+  animation: circle-2 10s ease normal infinite;
+}
+
+.circle:nth-child(3) {
+  background: #03a0ff;
+  animation: circle-3 10s ease normal infinite;
+}
+
+.circle:nth-child(4) {
+  background: #00d2ff;
+  animation: circle-4 10s ease normal infinite;
+}
+
+.circle:nth-child(5) {
+  background: #00ecff;
+  animation: circle-5 10s ease normal infinite;
+}
+
+.circle:nth-child(6) {
+  background: #016afb;
+  animation: circle-6 10s ease normal infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.8) rotate(0deg);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1) rotate(180deg);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0.8) rotate(360deg);
+    opacity: 0.3;
+  }
+}
+
+@keyframes circle-1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-35px, -50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes circle-2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(35px, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes circle-3 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-60px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes circle-4 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(60px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes circle-5 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-35px, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes circle-6 {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(35px, -50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+

@@ -8,10 +8,6 @@ import './App.css';
 
 class App extends Component {
 
-  // componentWillMount() {
-  //   addEventListener();
-  // }
-
   render() {
     return (
       <div className="App">
@@ -46,7 +42,7 @@ class App extends Component {
       <div className="container">
 
         <div className="row">
-          <div className="col-md-8">
+          <div className="col-md-12">
             <div className="card mb-4 box-shadow">
               <img className="card-img-top" data-src={bidtracker} alt="Thumbnail [100%x225]" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-holder-rendered="true"></img>
               <div className="card-body">
@@ -62,7 +58,7 @@ class App extends Component {
               </div>
             </div>
           </div>
-          <div className="col-md-12">
+          <div className="col-md-8">
             <div className="card mb-4 box-shadow iframe-scroll-wrapper">
               <iframe title="spider web interactive" aria-hidden="true" width="100%" height="500" src='' data-src="//jsfiddle.net/Datadazer/4yb106jq/2/embedded/result/" allowFullScreen="allowfullscreen" frameBorder="0"></iframe>
               <div className="card-body">

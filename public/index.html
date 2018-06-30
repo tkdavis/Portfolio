@@ -50,7 +50,7 @@
 
         window.onload = init;
       }
-      
+
       const addEventListener = () => {
         if (window.addEventListener) {
             window.addEventListener('DOMContentLoaded', init, false); 
@@ -72,7 +72,7 @@
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight+500 || document.documentElement.clientHeight) && /*or $(window).height() */
+            rect.bottom <= (window.innerHeight+700 || document.documentElement.clientHeight) && /*or $(window).height() */
             rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
         );
       }

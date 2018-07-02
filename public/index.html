@@ -48,6 +48,15 @@
           }
         }
 
+        let icons = document.getElementsByClassName('reveal-animate', 0);
+        for (var i=0; i<icons.length; i++) {
+          if(isElementInViewport(icons[i])) {
+            icons[i].classList.add('animated');
+            icons[i].classList.add('fadeInBottom');
+            icons[i].classList.remove('reveal-animate');
+          }
+        }
+
         window.onload = init;
       }
 
@@ -72,7 +81,7 @@
         return (
             rect.top >= 0 &&
             rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight+700 || document.documentElement.clientHeight) && /*or $(window).height() */
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
             rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
         );
       }

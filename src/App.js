@@ -135,7 +135,7 @@ class App extends Component {
             <div className="card mb-4 box-shadow">
               <img className="card-img-top" alt="Thumbnail [100%x225]" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src={bidtrackerlogo} data-holder-rendered="true"></img>
               <div className="card-body">
-                <p className="card-text">Logo designed with Inkscape. Focus on a more modern look with motion since speed and accuracy are important in a Sales Bid environment.</p>
+                <p className="card-text">Custom logo designed with Inkscape.</p>
               </div>
             </div>
           </div>

@@ -8,6 +8,7 @@ import {
   Route,
   NavLink
 } from 'react-router-dom'
+/*see if react dom works on heroku deploy*/
 
 class App extends Component {
 

@@ -8,7 +8,6 @@ import {
   Route,
   NavLink
 } from 'react-router-dom'
-/*see if react dom works on heroku deploy*/
 
 class App extends Component {
 
@@ -20,8 +19,8 @@ class App extends Component {
             <div className="container nav-component">
               <div className="row justify-content-start">
                 <div className="col-sm-2 col-lg-1"><NavLink exact to="/" activeClassName="selected-nav">Portfolio</NavLink></div>
-                <div className="col-sm-2 col-lg-1"><NavLink exact to="/about" activeClassName="selected-nav">About</NavLink></div>
-                <div className="col-sm-2 col-lg-1"><NavLink exact to="/resume" activeClassName="selected-nav">Resume</NavLink></div>
+                <div className="col-sm-2 col-lg-1"><NavLink to="/about" activeClassName="selected-nav">About</NavLink></div>
+                <div className="col-sm-2 col-lg-1"><NavLink to="/resume" activeClassName="selected-nav">Resume</NavLink></div>
               </div>
             </div>
           </header>

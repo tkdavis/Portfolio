@@ -13,7 +13,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <BrowserRouter>
         <div className="App">
           <header>
             <div className="container nav-component">
@@ -46,7 +46,7 @@ class App extends Component {
             </div>
           </footer>
         </div>
-      </Router>
+      </BrowserRouter>
     );
   }
 }

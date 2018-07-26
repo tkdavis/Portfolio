@@ -6,7 +6,8 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Route,
-  NavLink
+  NavLink,
+  Switch
 } from 'react-router-dom'
 
 class App extends Component {
@@ -24,9 +25,11 @@ class App extends Component {
               </div>
             </div>
           </header>
-          <Route exact path="/" component={Portfolio}/>
-          <Route path="/about" component={About}/>
-          <Route path="/resume" component={Resume}/>
+          <Switch>
+            <Route exact path="/" component={Portfolio}/>
+            <Route path="/about" component={About}/>
+            <Route path="/resume" component={Resume}/>
+          </Switch>
           <footer className="text-muted">
             <div className="container">
               <div className="row">

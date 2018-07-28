@@ -13,7 +13,7 @@ const About = () => {
              Those three years I worked on a laboratory information management system written with Ember.js, Ruby on Rails, PostgreSQL, as well as many minor libraries like D3 and Oauth.</p>
           <p>I am proud of my ability to pick up just about any stringed musical instrument and play it.
              I am especially proficient in playing violin and guitar.
-             In my freetime I like to design video games, drink tea, hike, and read sci-fi novels.</p>
+             In my free time I like to design video games, drink tea, hike, and read sci-fi novels.</p>
         </div>
       </div>
     </main>

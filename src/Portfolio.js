@@ -2,6 +2,7 @@ import React from 'react';
 import bidtracker from './bidtrackerss.jpg';
 import bidtrackerlogo from './bidtracker.png';
 import robomock from './robofriendsmock.jpg';
+import reactcalc from './reactcalc.jpg';
 
 
 const Portfolio = () => {
@@ -116,11 +117,19 @@ const Portfolio = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-6">
               <div className="card mb-4 box-shadow">
                 <img className="card-img-top" alt="Thumbnail [100%x225]" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src={bidtrackerlogo} data-holder-rendered="true"></img>
                 <div className="card-body">
                   <p className="card-text">Custom logo designed with Inkscape.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6">
+              <div className="card mb-4 box-shadow">
+                <img className="card-img-top" alt="Thumbnail [100%x225]" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src={reactcalc} data-holder-rendered="true"></img>
+                <div className="card-body">
+                  <p className="card-text">A calculator with features like formating scientific notation, sqrt, and percentages.</p>
                 </div>
               </div>
             </div>

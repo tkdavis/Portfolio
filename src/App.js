@@ -38,8 +38,8 @@ class App extends Component {
                   <p>Front End Developer</p>
                 </div>
                 <div className="col-md-4 text-left">
-                  <p>80904</p>
-                  <p>Colorado Springs, CO</p>
+                  <p>89052</p>
+                  <p>Henderson, NV</p>
                 </div>
                 <div className="col-md-4 text-left">
                   <p>tylerkoreydavis@gmail.com</p>

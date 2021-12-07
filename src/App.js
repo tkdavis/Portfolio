@@ -39,7 +39,11 @@ class App extends Component {
                 </div>
                 <div className="col-md-4 text-left">
                   <p>89052</p>
+<<<<<<< HEAD
                   <p>Las Vegas, NV</p>
+=======
+                  <p>Henderson, NV</p>
+>>>>>>> 83fd6a20b0b61ab65abdb45c6d408f87be834c07
                 </div>
                 <div className="col-md-4 text-left">
                   <p>tylerkoreydavis@gmail.com</p>

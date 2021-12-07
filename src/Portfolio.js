@@ -20,7 +20,7 @@ const Portfolio = () => {
         </div>
         <div className="container">
           <h1 className="jumbotron-heading serif-header">Tyler Davis</h1>
-          <p className="lead text-muted text-center">Hi, I am a front end developer with full stack experience.</p>
+          <p className="lead text-muted text-center">Hi, I am a web developer.</p>
         </div>
       </section>
 
@@ -114,14 +114,6 @@ const Portfolio = () => {
                 <iframe title="spider web interactive" aria-hidden="true" width="100%" height="500" src='' data-src="//jsfiddle.net/Datadazer/4yb106jq/2/embedded/result/" allowFullScreen="allowfullscreen" frameBorder="0"></iframe>
                 <div className="card-body">
                   <p className="card-text">A pure D3 force-directed interactive spider web. Designed for Bolt Threads' HR Career Web. Try me! Click and Drag a node on the web. </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="card mb-4 box-shadow">
-                <img className="card-img-top" alt="Thumbnail [100%x225]" src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src={bidtrackerlogo} data-holder-rendered="true"></img>
-                <div className="card-body">
-                  <p className="card-text">Custom logo designed with Inkscape.</p>
                 </div>
               </div>
             </div>
